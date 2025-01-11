@@ -3,5 +3,4 @@ project(CMakeSimpleProject VERSION 0.1.0 LANGUAGES CXX C)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(App main.cpp)
-target_compile_options(App PUBLIC "/arch:AVX2")
+add_executable(App main.cpp geometry.cpp)
