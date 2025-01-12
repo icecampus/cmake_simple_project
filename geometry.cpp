@@ -1,11 +1,18 @@
 
-#define CUBE(x)  ( (x) * (x) * (x) )
+//#define UNIX
+#define WINDOWS
 
 float process_data(int data)
 {
-	int i = 3;
+#ifdef UNIX
+	std::cout << "THIS IS UNIX BABY!!!";
+#endif // UNIX
 
-	int result = CUBE(i);
+#ifdef WINDOWS
+	std::cout << "THIS IS WINDOWS BABY!!!";
+#endif // WINDOWS
+
+
 
 	return 0;
 }
