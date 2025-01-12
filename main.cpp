@@ -1,7 +1,6 @@
 #include <iostream>
-
-
-float process_data(int data);
+#include <string>
+#include "geometry.h"
 
 int load_data()
 {
@@ -16,7 +15,7 @@ void save_data(int data)
 int main()
 {
     int data = load_data();
-    float result = process_data(data);
+    int result = process_data(data);
     save_data(result);
 
     return 1;
